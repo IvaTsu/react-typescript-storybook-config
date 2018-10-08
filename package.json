@@ -1,0 +1,24 @@
+{
+  "name": "react-typescript-storybook-config",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@github.com:IvaTsu/react-typescript-storybook-config.git",
+  "author": "IvaTsu <ivan.tsud@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "storybook": "start-storybook -p 6006 -c .storybook"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@storybook/addon-info": "4.0.0-alpha.24",
+    "@storybook/addon-knobs": "^3.4.11",
+    "@storybook/addons": "4.0.0-alpha.24",
+    "@storybook/react": "4.0.0-alpha.24",
+    "babel-loader": "^8.0.4",
+    "storybook-addon-jsx": "^5.4.0"
+  },
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  }
+}
