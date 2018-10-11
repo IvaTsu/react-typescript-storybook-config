@@ -1,12 +1,23 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
-import { text } from "@storybook/addon-knobs/react";
-import { wInfo } from "../.storybook/utils";
-import Button from "./Button";
+import { wInfo } from "./../.storybook/utils";
 
-storiesOf("Button", module).addWithJSX(
-  "with background",
-  wInfo("description of the Button component")(() => (
-    <Button bg={text("bg", "red")} title="Button" />
-  ))
-);
+import { storiesOf } from "@storybook/react";
+import { Button } from "./Button";
+import { text, boolean } from "@storybook/addon-knobs/react";
+
+storiesOf("Button", module)
+  .addWithJSX(
+    "with background",
+    wInfo(`
+      description
+      
+      ~~~js
+      <Button>slkdjslkdj</Button>
+      ~~~
+      `)(() => <Button bg="palegoldenrod">Hello world</Button>)
+  )
+  .addWithJSX("with background 2", () => (
+    <Button disabled={boolean("disabled", false)}>
+      {text("text", "Hello world")}
+    </Button>
+  ));
