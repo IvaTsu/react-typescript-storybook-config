@@ -39,9 +39,14 @@ Distributed under the MIT license. See [LICENSE](LICENSE) for more information.
 
 [https://github.com/ivatsu/](https://github.com/ivatsu/)
 
+## References:
+
+- [Guide on 'React + TypeScript + Storybook' config](https://github.com/IvaTsu/first-good-js-reference/blob/master/Projects/React-TypeScript-Storybook-Config.md)
+
 ## Built With:
 
 - [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
 - [Storybook](https://storybook.js.org/)
 
 ## Acknowledgments
